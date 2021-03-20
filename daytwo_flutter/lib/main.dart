@@ -1,3 +1,5 @@
+import 'dart:html' as html;
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 void main() {
@@ -87,6 +89,7 @@ void _toggleLike(){
 
 class ButtonSection extends StatelessWidget {
   const ButtonSection({Key key}) : super(key: key);
+  
 
   @override
   Widget build(BuildContext context) {
@@ -113,7 +116,8 @@ class ButtonSection extends StatelessWidget {
         Column(children: [
           IconButton(icon : (Icon(Icons.share,color: Colors.blue,)), 
           onPressed: () {
-                EasyLoading.showToast('Shared !');
+                html.window.open('https://youtu.be/TcXg6DZIQLU', 'ChopHee');
+               
             },),
           Text(''),
           Text('SHARE',style: TextStyle(color: Colors.blue),),
