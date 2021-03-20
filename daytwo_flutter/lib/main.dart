@@ -97,7 +97,7 @@ class ButtonSection extends StatelessWidget {
         Column(children: [
           IconButton(icon: (Icon(Icons.phone,color: Colors.blue,)), 
           onPressed: () {
-            
+                EasyLoading.showToast('Calling....');
             },),
           Text(''),
           Text('CALL',style: TextStyle(color: Colors.blue),),
@@ -105,7 +105,7 @@ class ButtonSection extends StatelessWidget {
         Column(children: [
           IconButton(icon: (Icon(Icons.assistant_navigation,color: Colors.blue,)),
           onPressed: () {
-
+              EasyLoading.showToast('Navigating....');
             },),
           Text(''),
           Text('ROUTE',style: TextStyle(color: Colors.blue),),
@@ -113,7 +113,7 @@ class ButtonSection extends StatelessWidget {
         Column(children: [
           IconButton(icon : (Icon(Icons.share,color: Colors.blue,)), 
           onPressed: () {
-
+                EasyLoading.showToast('Shared !');
             },),
           Text(''),
           Text('SHARE',style: TextStyle(color: Colors.blue),),
